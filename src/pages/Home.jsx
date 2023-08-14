@@ -4,7 +4,7 @@ import Back from '../images/Back.jpg'
 
 let myLink = {
   width: '100vw',
-  height: '100vh',
+  height: '76vh',
   backgroundImage: 'url(/src/images/Back.jpg)',
   backgroundSize: '100vw 100vh'
 }
