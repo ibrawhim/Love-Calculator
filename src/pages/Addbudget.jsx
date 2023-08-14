@@ -36,7 +36,7 @@ const Addbudget = () => {
         })
     }
     let myDiv = {
-        height: '80vh'
+        height: '80vh',
     }
     let myBtn = {
         backgroundColor: '#6b533b'
@@ -56,7 +56,7 @@ const Addbudget = () => {
                 </select>
             </div>
             <div className='my-3'>
-                <input className='form-control' type="text" placeholder='budget for?' name='budget' onChange={(e)=>setbudget(e.target.value)} value={budget}/>
+                <input className='form-control' type="text" placeholder='Budget For?' name='budget' onChange={(e)=>setbudget(e.target.value)} value={budget}/>
             </div>
             <div className='my-3'>
                 <input className='form-control' type="text" placeholder='Estimsted price'  name='price' onChange={(e)=>setprice(e.target.value)} value={price}/>
