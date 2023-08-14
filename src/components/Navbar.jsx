@@ -11,7 +11,7 @@ const Navbar = () => {
 
 <nav className="navbar" style={bgNavbar}>
   <div className="container-fluid">
-    <a className="navbar-brand fw-semibold text-light" href="#" >Mini Budget</a>
+    <a className="navbar-brand fw-semibold text-light ms-5" href="#" >Mini Budget</a>
   </div>
 </nav>
     </>
