@@ -2,17 +2,25 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Back from '../images/Back.jpg'
 
-let myLink = {
+let myDiv = {
+  // position: 'absolute',
   width: '100vw',
-  height: '76vh',
+  height: '100vh',
   backgroundImage: 'url(/src/images/Back.jpg)',
-  backgroundSize: '100vw 100vh'
+  backgroundSize: '100vw 100vh',
 }
+
+let myLink = {
+  backgroundColor: '#6b533b',
+  display: 'grid',
+  margin: 'auto'
+}
+
 const Home = () => {
   return (
     <>
-    <div style={myLink}>
-     <Link className='d-flex justify-content-center align-items-center top-50' to="/addbudget">Go to add budget</Link> 
+    <div style={myDiv}>
+     <Link style={myLink} className='d-flex justify-content-center align-items-center' to="/addbudget">Go to add budget</Link> 
     </div>
 
     </>
