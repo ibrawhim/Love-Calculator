@@ -1,7 +1,8 @@
 import React from 'react'
 
 let bgNavbar = {
-  backgroundColor: '#6b533b'
+  backgroundColor: '#6b533b',
+  height: '10vh'
 }
 
 const Navbar = () => {

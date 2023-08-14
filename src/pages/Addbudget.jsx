@@ -37,7 +37,8 @@ const Addbudget = () => {
     }
   return (
     <>
-        <div>
+    <div className='row'>
+        <div className='col-lg-6 col-md-6 col-sm-12'>
             <select name="Category" value={category} onChange={(e)=>setcategory(e.target.value)}>
                 <option value="">Category</option>
                 <option value="Housing">Housing</option>
@@ -51,9 +52,10 @@ const Addbudget = () => {
             <input type="text" placeholder='Quantity'  name='quantity' onChange={(e)=>setquantity(e.target.value)} value={quantity}/>
             <button onClick={addBudget}>Add Budget</button>
         </div>
-        <div>
-            <img src={Novelist} alt="" />
+        <div className='col-lg-6 col-md-6 col-sm-12'>
+            <img className='img-fluid' src={Novelist} alt="" />
         </div>
+    </div>
     </>
   )
 }

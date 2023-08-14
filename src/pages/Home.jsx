@@ -5,7 +5,7 @@ import Back from '../images/Back.jpg'
 let myDiv = {
   position: 'relative',
   width: '100vw',
-  height: '100vh',
+  height: '80vh',
   backgroundImage: 'url(/src/images/Back.jpg)',
   backgroundSize: '100vw 100vh',
 }
@@ -23,7 +23,7 @@ let myLink = {
 const Home = () => {
   return (
     <>
-    <div style={myDiv}>
+    <div style={myDiv} className='h-100-sm'>
       <div style={myLink} >
          <Link className='text-decoration-none text-light' to="/addbudget">Click here to add budget</Link> 
       </div>
