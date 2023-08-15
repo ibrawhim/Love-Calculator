@@ -30,29 +30,52 @@ const Budget = () => {
     height: '80vh',
     backgroundColor: '#f5dcb0'
   }
-
+  let mybtn = {
+    backgroundColor: '#6b533b',
+    color: 'white'
+  }
+  let cardDiv = {
+    width: '18rem'
+  }
   return (
       <>
       <div style={myDiv}>
         <section className='container'>
-          <div className='row'>
-            <div className='col-lg-3 col-md-4 col-sm-6'>
+          {/* <div className='row'>
+            <div className='col-lg-3 col-md-4 col-sm-6 card-header' style={cardDiv}>
               {
                 myBudget.length==0?<p className='fw-semibold fs-3 ms-5'>You haven't made a budget yet</p>:
                 myBudget.map((item,index)=>(
-                  <div key={index}>
+                <div key={index}>
                 <div>{index+1}.</div>
                 <div className='fw-bold'>{item.category}</div>
                 <div>{item.budget}</div>
                 <div>{item.price}</div>
-                <button onClick={()=>deleteOne(item.budget,item.price)}>Delete</button>
+                <button style={mybtn} className='btn' onClick={()=>deleteOne(item.budget,item.price)}>Delete</button>
                 </div>
               ))
               }
             </div>
-         </div>
+         </div> */}
+         <div className='row'>
+         {
+          myBudget.length==0?<p className='fw-semibold fs-3 ms-5'>You haven't made a budget yet</p>:
+          myBudget.map((item,index)=>(
+         <div className="card" key={index} style={cardDiv}>
+          <div className="card-header">
+            Featured
+          </div>
+          <ul className="list-group list-group-flush">
+            <li className="list-group-item">{item.category}</li>
+            <li className="list-group-item">{item.budget}</li>
+            <li className="list-group-item">{item.price}</li>
+          </ul>
+        </div>
+          ))
+        }
+        </div>
       </section>
-    <a href="/addbudget" className='text-decoration-none ms-5'>Click here to add budgets</a>
+    <a href="/addbudget" className='text-decoration-none ms-lg-5'>Click here to add budgets</a>
     </div>
     </>
   )
