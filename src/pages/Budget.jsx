@@ -57,11 +57,11 @@ const Budget = () => {
               }
             </div>
          </div> */}
-         <div className='row'>
+         <div className='col-lg-3 col-md-6 col-sm-12'>
          {
           myBudget.length==0?<p className='fw-semibold fs-3 ms-5'>You haven't made a budget yet</p>:
           myBudget.map((item,index)=>(
-         <div className="card" key={index} style={cardDiv}>
+         <div className="card col-lg-3 col-md-3 col-sm-12" key={index}>
           <div className="card-header">
             Featured
           </div>
