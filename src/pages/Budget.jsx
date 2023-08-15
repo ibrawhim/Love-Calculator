@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import 'animate.css';
+import { Link } from 'react-router-dom';
 
 
 
@@ -68,7 +69,7 @@ const Budget = () => {
         }
         </div>
       </section>
-    <a href="/addbudget" style={myLink} className=' ms-lg-5 fw-semibold'>Click here to add budgets</a>
+    <Link to="/addbudget" style={myLink} className=' ms-lg-5 fw-semibold'>Click here to add budgets</Link>
     </div>
     </>
   )
