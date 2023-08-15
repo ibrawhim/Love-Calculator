@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Back from '../images/Back.jpg'
 
-// let backgroundUrl = './src/images/Back.jpg'
 
 let myDiv = {
   position: 'relative',
