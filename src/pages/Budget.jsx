@@ -34,19 +34,24 @@ const Budget = () => {
   return (
       <>
       <div style={myDiv}>
-      {
-        myBudget.length==0?<p className='fw-semibold fs-3 ms-5'>You haven't made a budget yet</p>:
-        myBudget.map((item,index)=>(
-          <div key={index}>
-        <div>{index+1}.</div>
-        <div className='fw-bold'>{item.category}</div>
-        <div>{item.budget}</div>
-        <div>{item.price}</div>
-        <button onClick={()=>deleteOne(item.budget,item.price)}>Delete</button>
-        </div>
-      ))
-      
-    }
+        <section className='container'>
+          <div className='row'>
+            <div className='col-lg-3 col-md-4 col-sm-6'>
+              {
+                myBudget.length==0?<p className='fw-semibold fs-3 ms-5'>You haven't made a budget yet</p>:
+                myBudget.map((item,index)=>(
+                  <div key={index}>
+                <div>{index+1}.</div>
+                <div className='fw-bold'>{item.category}</div>
+                <div>{item.budget}</div>
+                <div>{item.price}</div>
+                <button onClick={()=>deleteOne(item.budget,item.price)}>Delete</button>
+                </div>
+              ))
+              }
+            </div>
+         </div>
+      </section>
     <a href="/addbudget" className='text-decoration-none ms-5'>Click here to add budgets</a>
     </div>
     </>

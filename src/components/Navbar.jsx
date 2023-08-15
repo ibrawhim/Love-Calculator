@@ -12,7 +12,8 @@ const Navbar = () => {
 
 <nav className="navbar" style={bgNavbar}>
   <div className="container-fluid">
-    <Link className="navbar-brand fw-semibold text-light ms-5" to="/" >Mini Budget</Link>
+    <Link className="navbar-brand fw-bold text-light ms-5" to="/" >Mini Budget</Link>
+    <Link className="navbar-brand fs-5 text-light ms-5" to="/budget" >Go to Budgets</Link>
   </div>
 </nav>
     </>
