@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import 'animate.css';
 
 
 
@@ -47,7 +48,7 @@ const Budget = () => {
       <>
       <div style={myDiv}>
         <section className='container-fluid'>
-         <div className='row'>
+         <div className='row animate__animated animate__lightSpeedInRight'>
          {
           myBudget.length==0?<p className='fw-semibold fs-3 ms-5'>You haven't made a budget yet</p>:
           myBudget.map((item,index)=>(
