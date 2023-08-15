@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 
 
 
-const Cart = () => {
+const Budget = () => {
   const [myBudget, setmyBudget] = useState([])
   let url = 'http://localhost:4999/budget/cart'
   let url2 = 'http://localhost:4999/budget/delete'
@@ -26,13 +26,16 @@ const Cart = () => {
     })
   
   }
+  let myDiv = {
+    height: '80vh',
+    backgroundColor: '#f5dcb0'
+  }
 
   return (
       <>
-      <a href="/addbudget">Go back</a>
-      
+      <div style={myDiv}>
       {
-        myBudget.length==0?<p>budget is empty</p>:
+        myBudget.length==0?<p className='fw-semibold fs-3 ms-5'>You haven't made a budget yet</p>:
         myBudget.map((item,index)=>(
           <div key={index}>
         <div>{index+1}.</div>
@@ -44,8 +47,10 @@ const Cart = () => {
       ))
       
     }
+    <a href="/addbudget" className='text-decoration-none ms-5'>Click here to add budgets</a>
+    </div>
     </>
   )
 }
 
-export default Cart
+export default Budget

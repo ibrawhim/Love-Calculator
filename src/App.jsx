@@ -3,7 +3,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import Navbar from './components/Navbar'
 import Footer from './components/Footer';
 import Home from './pages/Home'
-import Cart from './pages/Cart'
+import Budget from './pages/Budget'
 import { Route, Routes } from 'react-router-dom';
 import Addbudget from './pages/Addbudget';
 
@@ -18,7 +18,7 @@ function App() {
     <Navbar/>
     <Routes>
       <Route path='/'  element={<Home/>}/>
-      <Route path='/cart'  element={<Cart/>}/>
+      <Route path='/budget'  element={<Budget/>}/>
       <Route path='/addbudget'  element={<Addbudget/>}/>
     </Routes>
     <Footer/>
