@@ -1,14 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-// import Back from '../images/Back.jpg'
+import Back from '../images/Back.jpg'
 
-let backgroundUrl = './src/images/Back.jpg'
+// let backgroundUrl = './src/images/Back.jpg'
 
 let myDiv = {
   position: 'relative',
   width: '100vw',
   height: '80vh',
-  backgroundImage: `url(${backgroundUrl})`,
+  backgroundImage: `url(${Back})`,
   backgroundSize: '100vw 100vh',
 }
 
