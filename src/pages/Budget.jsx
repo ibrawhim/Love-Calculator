@@ -37,45 +37,37 @@ const Budget = () => {
   let cardDiv = {
     width: '18rem'
   }
+  let creamBg = {
+    backgroundColor: '#f5dcb0'
+  }
+  let myLink = {
+    color: '#6b533b'
+  }
   return (
       <>
       <div style={myDiv}>
-        <section className='container'>
-          {/* <div className='row'>
-            <div className='col-lg-3 col-md-4 col-sm-6 card-header' style={cardDiv}>
-              {
-                myBudget.length==0?<p className='fw-semibold fs-3 ms-5'>You haven't made a budget yet</p>:
-                myBudget.map((item,index)=>(
-                <div key={index}>
-                <div>{index+1}.</div>
-                <div className='fw-bold'>{item.category}</div>
-                <div>{item.budget}</div>
-                <div>{item.price}</div>
-                <button style={mybtn} className='btn' onClick={()=>deleteOne(item.budget,item.price)}>Delete</button>
-                </div>
-              ))
-              }
-            </div>
-         </div> */}
-         <div className='col-lg-3 col-md-6 col-sm-12'>
+        <section className='container-fluid'>
+         <div className='row'>
          {
           myBudget.length==0?<p className='fw-semibold fs-3 ms-5'>You haven't made a budget yet</p>:
           myBudget.map((item,index)=>(
-         <div className="card col-lg-3 col-md-3 col-sm-12" key={index}>
-          <div className="card-header">
-            Featured
-          </div>
-          <ul className="list-group list-group-flush">
-            <li className="list-group-item">{item.category}</li>
-            <li className="list-group-item">{item.budget}</li>
-            <li className="list-group-item">{item.price}</li>
+         <div className="card col-lg-3 col-md-3 col-sm-12 m-2 ms-0" style={creamBg} key={index}>
+          <div className="card-header" style={mybtn}>Category: {item.category}</div>
+          <ul className="list-group list-group-flush" style={creamBg}>
+            <li style={creamBg} className="list-group-item">Budget: {item.budget}</li>
+            <li style={creamBg} className="list-group-item">Estimated Price: ${item.price}</li>
+            <li style={creamBg} className="list-group-item">Quantity: {item.quantity}</li>
+            <li style={creamBg} className="list-group-item">Total: ${item.quantity * item.price}</li>
+            <li>
+            <button style={mybtn} className='btn w-100 my-1' onClick={()=>deleteOne(item.budget,item.price)}>Delete</button>
+            </li>
           </ul>
         </div>
           ))
         }
         </div>
       </section>
-    <a href="/addbudget" className='text-decoration-none ms-lg-5'>Click here to add budgets</a>
+    <a href="/addbudget" style={myLink} className=' ms-lg-2'>Click here to add budgets</a>
     </div>
     </>
   )
