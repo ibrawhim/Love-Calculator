@@ -9,7 +9,8 @@ import * as Yup from 'yup'
 
 const Addbudget = () => {
 
-    let endpoint = 'http://localhost:4999/budget/addbudget'
+    // let endpoint = 'http://localhost:4999/budget/addbudget'
+    let endpoint = 'https://mini-budget-back.vercel.app/budget/addbudget'
     let navigate = useNavigate()
     
     let formik = useFormik({
