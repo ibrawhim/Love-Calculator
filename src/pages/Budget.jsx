@@ -51,7 +51,7 @@ const Budget = () => {
          {
           myBudget.length==0?<p className='fw-semibold fs-3 ms-5'>You haven't made a budget yet</p>:
           myBudget.map((item,index)=>(
-         <div className="card col-lg-3 col-md-3 col-sm-12 m-2 ms-0" style={creamBg} key={index}>
+         <div className="card col-lg-2 col-md-3 col-sm-12 m-2 ms-0" style={creamBg} key={index}>
           <div className="card-header" style={mybtn}>Category: {item.category}</div>
           <ul className="list-group list-group-flush" style={creamBg}>
             <li style={creamBg} className="list-group-item">Budget: {item.budget}</li>
@@ -67,7 +67,7 @@ const Budget = () => {
         }
         </div>
       </section>
-    <a href="/addbudget" style={myLink} className=' ms-lg-2'>Click here to add budgets</a>
+    <a href="/addbudget" style={myLink} className=' ms-lg-2 fw-semibold'>Click here to add budgets</a>
     </div>
     </>
   )
