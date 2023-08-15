@@ -6,6 +6,8 @@ let bgNavbar = {
   height: '10vh'
 }
 
+
+
 const Navbar = () => {
   return (
     <>
@@ -13,7 +15,7 @@ const Navbar = () => {
 <nav className="navbar" style={bgNavbar}>
   <div className="container-fluid">
     <Link className="navbar-brand fw-bold text-light ms-lg-5" to="/" >Mini Budget</Link>
-    <Link className="navbar-brand fs-5 text-light ms-5" to="/budget" >Go to Budgets</Link>
+    <Link  className="navbar-brand fs-5 text-light ms-5 border p-1 rounded-3" to="/budget" >Go to Budgets</Link>
   </div>
 </nav>
     </>

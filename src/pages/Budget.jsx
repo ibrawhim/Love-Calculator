@@ -7,8 +7,7 @@ import { Link } from 'react-router-dom';
 
 const Budget = () => {
   const [myBudget, setmyBudget] = useState([])
-  // let url = 'http://localhost:4999/budget/cart'
-  // let url2 = 'http://localhost:4999/budget/delete'
+
 
   let url = 'https://mini-budget-back.vercel.app/budget/cart'
   let url2 = 'https://mini-budget-back.vercel.app/budget/delete'
