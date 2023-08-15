@@ -27,16 +27,16 @@ const Budget = () => {
   
   }
   let myDiv = {
-    height: '80vh',
+    minHeight: '80vh',
     backgroundColor: '#f5dcb0'
   }
   let mybtn = {
     backgroundColor: '#6b533b',
     color: 'white'
   }
-  let cardDiv = {
-    width: '18rem'
-  }
+  // let cardDiv = {
+  //   width: '18rem'
+  // }
   let creamBg = {
     backgroundColor: '#f5dcb0'
   }
@@ -51,7 +51,7 @@ const Budget = () => {
          {
           myBudget.length==0?<p className='fw-semibold fs-3 ms-5'>You haven't made a budget yet</p>:
           myBudget.map((item,index)=>(
-         <div className="card col-lg-2 col-md-3 col-sm-12 m-2 ms-0" style={creamBg} key={index}>
+         <div className="card col-lg-3 mx-lg-5 ms-lg-5 col-md-5 mx-md-4 col-sm-12 ms-0 my-2" style={creamBg} key={index}>
           <div className="card-header" style={mybtn}>Category: {item.category}</div>
           <ul className="list-group list-group-flush" style={creamBg}>
             <li style={creamBg} className="list-group-item">Budget: {item.budget}</li>
@@ -67,7 +67,7 @@ const Budget = () => {
         }
         </div>
       </section>
-    <a href="/addbudget" style={myLink} className=' ms-lg-2 fw-semibold'>Click here to add budgets</a>
+    <a href="/addbudget" style={myLink} className=' ms-lg-5 fw-semibold'>Click here to add budgets</a>
     </div>
     </>
   )
