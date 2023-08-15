@@ -6,7 +6,7 @@ let myDiv = {
   position: 'relative',
   width: '100vw',
   height: '80vh',
-  backgroundImage: 'url(/src/images/Back.jpg)',
+  backgroundImage: `url(${Back.jpg})` ,
   backgroundSize: '100vw 100vh',
 }
 
