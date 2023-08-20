@@ -39,9 +39,7 @@ const Budget = () => {
     backgroundColor: '#6b533b',
     color: 'white'
   }
-  // let cardDiv = {
-  //   width: '18rem'
-  // }
+  
   let creamBg = {
     backgroundColor: '#f5dcb0'
   }
